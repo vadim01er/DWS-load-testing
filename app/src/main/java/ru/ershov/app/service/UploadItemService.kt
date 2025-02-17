@@ -27,7 +27,7 @@ class UploadItemService(
         logger.info("Saving file to $DIR")
         val directory = File(DIR)
         if (!directory.exists()) {
-            directory.mkdirs() // Создаем директорию, если она не существует
+            directory.mkdirs()
         }
 
         val existingFiles = directory.listFiles()?.size ?: 0
